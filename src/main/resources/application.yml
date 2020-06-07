@@ -1,0 +1,15 @@
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/fluxr2db
+    username: postgres
+    password: 1234
+  flyway:
+    url: jdbc:postgresql://localhost:5432/fluxr2db
+    user: postgres
+    password: 1234
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          r2dbc: DEBUG
